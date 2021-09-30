@@ -13,7 +13,7 @@ Program should start. First of all you will see the help with instructions what 
 # Input data from file
 Before run you can create file with lines of data. 
 Then type this command to run:
-java Delivery <path to the file with data>
+java Delivery [path to the file with data]
 
 # Hint: Type command without brackets <>
   
