@@ -11,7 +11,8 @@ Program should start. First of all you will see the help with instructions what 
 <postal code: fixed 5 digits><space><total weight: fixed 3 decimal places, . (dot) as decimal separator>
 
 # Input data from file
-Before run you can create file with lines of data. Format should Then type this command to run:
+Before run you can create file with lines of data. 
+Format should Then type this command to run:
 java Delivery <path to the file with data>
 
 # Hint: Type command without brackets <>
