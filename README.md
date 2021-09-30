@@ -15,7 +15,7 @@ Before run you can create file with lines of data.
 Then type this command to run:
 java Delivery [path to the file with data]
 
-# Hint: Type command without brackets <>
+# Hint: Type command without brackets <>, []
   
 # Program validatates:
 - Weight and postal code formats. 
