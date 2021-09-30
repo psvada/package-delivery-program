@@ -62,7 +62,7 @@ public class Delivery {
             System.out.println(help);
         } else if (data.equals("get output")) {
             printOutput(deliveryPackageList);
-        } else if (!dataInputHasError(splitStr, lineNumber)) {
+        } else if (isDataInputWithoutError(splitStr, lineNumber)) {
             addPackageToDeliveryPackageListAndSort((List<DeliveryPackage>) deliveryPackageList, splitStr);
         }
     }
@@ -85,7 +85,7 @@ public class Delivery {
         sortDeliveryPackages(false, deliveryPackageList);
     }
 
-    private static boolean dataInputHasError(String[] splitStr, Integer lineNumber) {
+    private static boolean isDataInputWithoutError(String[] splitStr, Integer lineNumber) {
         boolean hasError = false;
         StringBuilder errorMessage = new StringBuilder();
         if (splitStr.length != 2) {
@@ -111,7 +111,7 @@ public class Delivery {
             }
             System.out.println(errorMessage);
         }
-        return hasError;
+        return !hasError;
     }
 
     private static void processDataInput(String data, Console c, String help, List<DeliveryPackage> deliveryPackageList, boolean needSchedulePrintOutput) {
@@ -125,7 +125,7 @@ public class Delivery {
             System.out.println(help);
         } else if (data.equals("get output")) {
             printOutput(deliveryPackageList);
-        } else if (!dataInputHasError(splitStr, null)) {
+        } else if (isDataInputWithoutError(splitStr, null)) {
             addPackageToDeliveryPackageListAndSort((List<DeliveryPackage>) deliveryPackageList, splitStr);
             System.out.println("Data saved...");
 
